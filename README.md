@@ -120,15 +120,6 @@ scripts/              # case 挖掘（SWE-bench 式）+ 演示仓库生成
 tests/                # 247 个离线测试（Fake 注入，无需 API key）
 ```
 
-## Limitations
-
-- case 挖自近年公开修复提交，模型可能见过对应 fix commit（靠同条件 baseline
-  对比缓解）；n=15，不做统计显著性声明
-- 上下文定位为启发式（符号反查 + 调用链 + 取证循环），极深层协作者仍有盲区；
-  计划引入 tree-sitter 代码图
-- HITL 的 edit（人工编辑补丁后恢复执行）未实现；checkpoint 跨进程持久化未启用
-- 明确不做：Multi-Agent、向量长期记忆、MCP（当前无跨系统工具需求，
-  硬加属于堆词）
 
 ## License
 
