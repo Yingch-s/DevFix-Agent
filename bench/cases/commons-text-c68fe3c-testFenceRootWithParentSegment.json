@@ -1,0 +1,17 @@
+{
+  "case_id": "commons-text-c68fe3c-testFenceRootWithParentSegment",
+  "source": "mined",
+  "strategy": "new_test",
+  "repo_name": "commons-text",
+  "repo_url": "https://github.com/apache/commons-text.git",
+  "buggy_commit": "eb04140887f171c8b42a1adbff0cd2b703fab7ff",
+  "fix_commit": "c68fe3c2a373a837b1d064809e8ebaec6e510f9c",
+  "fix_subject": "Fix path fence bypass for relative paths with leading \"..\" (#745)",
+  "test_class": "FileStringLookupTest",
+  "test_method": "testFenceRootWithParentSegment",
+  "log_file": "commons-text-c68fe3c-testFenceRootWithParentSegment.log",
+  "test_patch_file": "commons-text-c68fe3c-testFenceRootWithParentSegment.test.patch",
+  "ground_truth_files": [
+    "src/main/java/org/apache/commons/text/lookup/PathFence.java"
+  ]
+}

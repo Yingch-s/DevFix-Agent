@@ -1,0 +1,113 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ------------------< org.apache.commons:commons-text >-------------------
+[INFO] Building Apache Commons Text 1.15.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- enforcer:3.6.2:enforce (enforce-maven-version) @ commons-text ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- enforcer:3.6.2:enforce (enforce-java-version) @ commons-text ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- apache-rat:0.18:check (rat-check) @ commons-text ---
+[INFO] No issues found.
+[INFO] 
+[INFO] --- artifact:3.6.1:check-buildplan (check-buildplan) @ commons-text ---
+[INFO] No known issue in 20 plugins
+[INFO] 
+[INFO] --- build-helper:3.6.1:parse-version (parse-version) @ commons-text ---
+[INFO] 
+[INFO] --- antrun:3.2.0:run (javadoc.resources) @ commons-text ---
+[INFO] Executing tasks
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- remote-resources:3.3.0:process (process-resource-bundles) @ commons-text ---
+[INFO] Skipping remote resources execution.
+[INFO] 
+[INFO] --- resources:3.5.0:resources (default-resources) @ commons-text ---
+[INFO] skip non existing resourceDirectory D:\Workspace\Agent\DevFix\bench\.work\commons-text\src\main\resources
+[INFO] Copying 2 resources from . to target\classes\META-INF
+[INFO] 
+[INFO] --- compiler:3.15.0:compile (default-compile) @ commons-text ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 112 source files with javac [debug release 8] to target\classes
+[WARNING] Դֵ 8 �ѹ�ʱ������δ�����а���ɾ��
+[WARNING] Ŀ��ֵ 8 �ѹ�ʱ������δ�����а���ɾ��
+[WARNING] Ҫ�����й��ѹ�ʱѡ��ľ���, ��ʹ�� -Xlint:-options��
+[INFO] /D:/Workspace/Agent/DevFix/bench/.work/commons-text/src/main/java/org/apache/commons/text/RandomStringGenerator.java: ĳЩ�����ļ�ʹ�û򸲸����ѹ�ʱ�� API��
+[INFO] /D:/Workspace/Agent/DevFix/bench/.work/commons-text/src/main/java/org/apache/commons/text/RandomStringGenerator.java: �й���ϸ��Ϣ, ��ʹ�� -Xlint:deprecation ���±��롣
+[INFO] /D:/Workspace/Agent/DevFix/bench/.work/commons-text/src/main/java/org/apache/commons/text/StrBuilder.java: ĳЩ�����ļ�ʹ����δ�����򲻰�ȫ�Ĳ�����
+[INFO] /D:/Workspace/Agent/DevFix/bench/.work/commons-text/src/main/java/org/apache/commons/text/StrBuilder.java: �й���ϸ��Ϣ, ��ʹ�� -Xlint:unchecked ���±��롣
+[INFO] 
+[INFO] --- bundle:6.0.2:manifest (bundle-manifest) @ commons-text ---
+[INFO] Writing manifest: D:\Workspace\Agent\DevFix\bench\.work\commons-text\target\osgi\MANIFEST.MF
+[INFO] 
+[INFO] --- resources:3.5.0:testResources (default-testResources) @ commons-text ---
+[INFO] Copying 12 resources from src\test\resources to target\test-classes
+[INFO] Copying 2 resources from . to target\test-classes\META-INF
+[INFO] 
+[INFO] --- compiler:3.15.0:testCompile (default-testCompile) @ commons-text ---
+[INFO] Recompiling the module because of changed dependency.
+[INFO] Compiling 105 source files with javac [debug release 8] to target\test-classes
+[WARNING] Դֵ 8 �ѹ�ʱ������δ�����а���ɾ��
+[WARNING] Ŀ��ֵ 8 �ѹ�ʱ������δ�����а���ɾ��
+[WARNING] Ҫ�����й��ѹ�ʱѡ��ľ���, ��ʹ�� -Xlint:-options��
+[INFO] /D:/Workspace/Agent/DevFix/bench/.work/commons-text/src/test/java/org/apache/commons/text/RandomStringGeneratorTest.java: ĳЩ�����ļ�ʹ�û򸲸����ѹ�ʱ�� API��
+[INFO] /D:/Workspace/Agent/DevFix/bench/.work/commons-text/src/test/java/org/apache/commons/text/RandomStringGeneratorTest.java: �й���ϸ��Ϣ, ��ʹ�� -Xlint:deprecation ���±��롣
+[INFO] 
+[INFO] --- jacoco:0.8.14:prepare-agent (prepare-agent) @ commons-text ---
+[INFO] argLine set to -javaagent:C:\\Users\\bula7\\.m2\\repository\\org\\jacoco\\org.jacoco.agent\\0.8.14\\org.jacoco.agent-0.8.14-runtime.jar=destfile=D:\\Workspace\\Agent\\DevFix\\bench\\.work\\commons-text\\target\\jacoco.exec -XX:+EnableDynamicAgentLoading
+[INFO] 
+[INFO] --- surefire:3.5.5:test (default-test) @ commons-text ---
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.apache.commons.text.translate.CsvTranslatorsTest
+[ERROR] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.077 s <<< FAILURE! -- in org.apache.commons.text.translate.CsvTranslatorsTest
+[ERROR] org.apache.commons.text.translate.CsvTranslatorsTest.testCsvUnEscaperSingleQuoteTest -- Time elapsed: 0.048 s <<< ERROR!
+java.lang.StringIndexOutOfBoundsException: Range [1, 0) out of bounds for length 1
+	at java.base/jdk.internal.util.Preconditions$1.apply(Preconditions.java:55)
+	at java.base/jdk.internal.util.Preconditions$1.apply(Preconditions.java:52)
+	at java.base/jdk.internal.util.Preconditions$4.apply(Preconditions.java:213)
+	at java.base/jdk.internal.util.Preconditions$4.apply(Preconditions.java:210)
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:98)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckFromToIndex(Preconditions.java:112)
+	at java.base/jdk.internal.util.Preconditions.checkFromToIndex(Preconditions.java:349)
+	at java.base/java.lang.String.checkBoundsBeginEnd(String.java:4849)
+	at java.base/java.lang.String.substring(String.java:2823)
+	at java.base/java.lang.String.subSequence(String.java:2861)
+	at org.apache.commons.text.translate.CsvTranslators$CsvUnescaper.translateWhole(CsvTranslators.java:84)
+	at org.apache.commons.text.translate.CsvTranslatorsTest.testCsvUnEscaperSingleQuoteTest(CsvTranslatorsTest.java:85)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+[INFO] 
+[INFO] Results:
+[INFO] 
+[ERROR] Errors: 
+[ERROR]   CsvTranslatorsTest.testCsvUnEscaperSingleQuoteTest:85 ? StringIndexOutOfBounds Range [1, 0) out of bounds for length 1
+[INFO] 
+[ERROR] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  10.595 s
+[INFO] Finished at: 2026-09-30T22:48:32+08:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:3.5.5:test (default-test) on project commons-text: 
+[ERROR] 
+[ERROR] See D:\Workspace\Agent\DevFix\bench\.work\commons-text\target\surefire-reports for the individual test results.
+[ERROR] See dump files (if any exist) [date].dump, [date]-jvmRun[N].dump and [date].dumpstream.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

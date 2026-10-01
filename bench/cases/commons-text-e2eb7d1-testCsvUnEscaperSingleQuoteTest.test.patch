@@ -1,0 +1,21 @@
+diff --git a/src/test/java/org/apache/commons/text/translate/CsvTranslatorsTest.java b/src/test/java/org/apache/commons/text/translate/CsvTranslatorsTest.java
+index d849d160..98a8873f 100644
+--- a/src/test/java/org/apache/commons/text/translate/CsvTranslatorsTest.java
++++ b/src/test/java/org/apache/commons/text/translate/CsvTranslatorsTest.java
+@@ -77,6 +77,16 @@ class CsvTranslatorsTest {
+         assertEquals("\"hi,this,is,a,\"\"quote,test\"", data);
+     }
+ 
++    @Test
++    void testCsvUnEscaperSingleQuoteTest() throws IOException {
++        final CsvTranslators.CsvUnescaper escaper = new CsvTranslators.CsvUnescaper();
++        final Writer writer = new StringWriter();
++        final String input = "\"";
++        escaper.translateWhole(input, writer);
++        final String data = writer.toString();
++        assertEquals(input, data);
++    }
++
+     @Test
+     void testCsvUnEscaperPlaneTextTest() throws IOException {
+         final CsvTranslators.CsvUnescaper escaper = new CsvTranslators.CsvUnescaper();

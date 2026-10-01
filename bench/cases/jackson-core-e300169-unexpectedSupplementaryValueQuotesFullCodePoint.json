@@ -1,0 +1,19 @@
+{
+  "case_id": "jackson-core-e300169-unexpectedSupplementaryValueQuotesFullCodePoint",
+  "source": "mined",
+  "strategy": "new_test",
+  "repo_name": "jackson-core",
+  "repo_url": "https://github.com/FasterXML/jackson-core.git",
+  "buggy_commit": "fe0da01e3ec9e68cf6c75feb890e865d206c91c4",
+  "fix_commit": "e3001698ac43ec4149f27258dbbaba244ac51732",
+  "fix_subject": "Fix #1728: Quote supplementary code points in unexpected-character messages (#1729)",
+  "test_class": "SupplementaryCharDesc1728Test",
+  "test_method": "unexpectedSupplementaryValueQuotesFullCodePoint",
+  "log_file": "jackson-core-e300169-unexpectedSupplementaryValueQuotesFullCodePoint.log",
+  "test_patch_file": "jackson-core-e300169-unexpectedSupplementaryValueQuotesFullCodePoint.test.patch",
+  "ground_truth_files": [
+    "src/main/java/tools/jackson/core/base/ParserMinimalBase.java",
+    "src/main/java/tools/jackson/core/json/UTF8DataInputJsonParser.java",
+    "src/main/java/tools/jackson/core/json/UTF8StreamJsonParser.java"
+  ]
+}

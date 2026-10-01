@@ -1,0 +1,12 @@
+# DevFix 配置示例
+# 使用方法：复制为 devfix.yaml 后填写（或直接运行 `devfix init`）
+# 注意：devfix.yaml 是用户私有配置，已在 .gitignore 中排除，请勿提交。
+#
+# 当前默认示例：DeepSeek（OpenAI 兼容接口，https://api.deepseek.com）
+llm:
+  provider: deepseek       # ark | openai | deepseek
+  model: deepseek-v4-pro   # 主力模型（支持 function calling）；便宜替代：deepseek-flash
+  # base_url: ""           # 留空使用 provider 默认值
+  # api_key_env: DEEPSEEK_API_KEY  # API Key 从该环境变量读取，不写入本文件
+  temperature: 0
+  max_tokens: 8192

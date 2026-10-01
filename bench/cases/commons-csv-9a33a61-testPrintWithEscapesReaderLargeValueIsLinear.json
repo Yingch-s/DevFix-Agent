@@ -1,0 +1,17 @@
+{
+  "case_id": "commons-csv-9a33a61-testPrintWithEscapesReaderLargeValueIsLinear",
+  "source": "mined",
+  "strategy": "new_test",
+  "repo_name": "commons-csv",
+  "repo_url": "https://github.com/apache/commons-csv.git",
+  "buggy_commit": "dbdf96b705c47d7d1966dcc385208492ce128700",
+  "fix_commit": "9a33a61732bd334159d0b072aa90ba35aae14e67",
+  "fix_subject": "fix quadratic printWithEscapes(Reader) delimiter look-ahead",
+  "test_class": "CSVFormatTest",
+  "test_method": "testPrintWithEscapesReaderLargeValueIsLinear",
+  "log_file": "commons-csv-9a33a61-testPrintWithEscapesReaderLargeValueIsLinear.log",
+  "test_patch_file": "commons-csv-9a33a61-testPrintWithEscapesReaderLargeValueIsLinear.test.patch",
+  "ground_truth_files": [
+    "src/main/java/org/apache/commons/csv/CSVFormat.java"
+  ]
+}

@@ -1,0 +1,68 @@
+diff --git a/src/test/java/org/apache/commons/csv/CSVParserTest.java b/src/test/java/org/apache/commons/csv/CSVParserTest.java
+index 5bece571..29ca0cf1 100644
+--- a/src/test/java/org/apache/commons/csv/CSVParserTest.java
++++ b/src/test/java/org/apache/commons/csv/CSVParserTest.java
+@@ -666,6 +666,31 @@ class CSVParserTest {
+         }
+     }
+ 
++    /**
++     * Tests <a href="https://issues.apache.org/jira/browse/CSV-329">CSV-329</a>.
++     */
++    @Test
++    void testGetBytePositionMultiCharacterDelimiterWithSupplementaryCharacter() throws IOException {
++        final String delimiter = "x😀";
++        final String code = "ax😀b\ncx😀d\n";
++        final CSVFormat format = CSVFormat.DEFAULT.builder().setDelimiter(delimiter).get();
++        try (CSVParser parser = CSVParser.builder()
++                .setReader(new StringReader(code))
++                .setFormat(format)
++                .setCharset(UTF_8)
++                .setTrackBytes(true)
++                .get()) {
++            final CSVRecord first = parser.nextRecord();
++            final CSVRecord second = parser.nextRecord();
++            assertNotNull(first);
++            assertNotNull(second);
++            assertValuesEquals(new String[] { "a", "b" }, first);
++            assertValuesEquals(new String[] { "c", "d" }, second);
++            assertEquals(0, first.getBytePosition());
++            assertEquals("ax😀b\n".getBytes(UTF_8).length, second.getBytePosition());
++        }
++    }
++
+     @Test
+     void testGetBytePositionWithCharacterOffsetAndMultiBytePrefix() throws Exception {
+         final String row0 = "é,x\n";
+diff --git a/src/test/java/org/apache/commons/csv/ExtendedBufferedReaderTest.java b/src/test/java/org/apache/commons/csv/ExtendedBufferedReaderTest.java
+index 056b8a9c..b8d9b9f1 100644
+--- a/src/test/java/org/apache/commons/csv/ExtendedBufferedReaderTest.java
++++ b/src/test/java/org/apache/commons/csv/ExtendedBufferedReaderTest.java
+@@ -26,6 +26,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
+ import static org.junit.jupiter.api.Assertions.assertNull;
+ 
+ import java.io.StringReader;
++import java.nio.charset.StandardCharsets;
+ 
+ import org.junit.jupiter.api.Test;
+ 
+@@ -104,6 +105,19 @@ class ExtendedBufferedReaderTest {
+         }
+     }
+ 
++    @Test
++    void testReadingSupplementaryCharacterTracksBytes() throws Exception {
++        final String input = "😀";
++        final char[] buffer = new char[input.length()];
++        try (ExtendedBufferedReader reader = new ExtendedBufferedReader(new StringReader(input), StandardCharsets.UTF_8, true)) {
++            assertEquals(input.length(), reader.read(buffer, 0, buffer.length));
++            assertArrayEquals(input.toCharArray(), buffer);
++            assertEquals(input.getBytes(StandardCharsets.UTF_8).length, reader.getBytesRead());
++            assertEquals(input.length(), reader.getPosition());
++            assertEquals(input.charAt(input.length() - 1), reader.getLastChar());
++        }
++    }
++
+     @Test
+     void testReadLine() throws Exception {
+         try (ExtendedBufferedReader br = createBufferedReader("")) {

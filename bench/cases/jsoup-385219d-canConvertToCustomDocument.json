@@ -1,0 +1,17 @@
+{
+  "case_id": "jsoup-385219d-canConvertToCustomDocument",
+  "source": "mined",
+  "strategy": "new_test",
+  "repo_name": "jsoup",
+  "repo_url": "https://github.com/jhy/jsoup.git",
+  "buggy_commit": "6c0c2d4514278a82eb0868c5d978612a79c6d058",
+  "fix_commit": "385219da0dea81918ffc285b42cca51f9c8d9df9",
+  "fix_subject": "Fix NullPointerException in case a custom document is passed to W3CDom#convert",
+  "test_class": "W3CDomTest",
+  "test_method": "canConvertToCustomDocument",
+  "log_file": "jsoup-385219d-canConvertToCustomDocument.log",
+  "test_patch_file": "jsoup-385219d-canConvertToCustomDocument.test.patch",
+  "ground_truth_files": [
+    "src/main/java/org/jsoup/helper/W3CDom.java"
+  ]
+}

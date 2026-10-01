@@ -1,0 +1,17 @@
+{
+  "case_id": "commons-lang-fa24703-testCachedHashCodeRecomputed",
+  "source": "mined",
+  "strategy": "new_test",
+  "repo_name": "commons-lang",
+  "repo_url": "https://github.com/apache/commons-lang.git",
+  "buggy_commit": "7a72b0db647d4da4b04ce14b6325e979ff6eb3d1",
+  "fix_commit": "fa2470369bc43d1806f92685d81f49b8d828160d",
+  "fix_subject": "Fix Range serialization compatibility and hash reconstruction (#1802)",
+  "test_class": "RangeReadObjectTest",
+  "test_method": "testCachedHashCodeRecomputed",
+  "log_file": "commons-lang-fa24703-testCachedHashCodeRecomputed.log",
+  "test_patch_file": "commons-lang-fa24703-testCachedHashCodeRecomputed.test.patch",
+  "ground_truth_files": [
+    "src/main/java/org/apache/commons/lang3/Range.java"
+  ]
+}

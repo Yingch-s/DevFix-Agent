@@ -1,0 +1,17 @@
+{
+  "case_id": "commons-text-e2eb7d1-testCsvUnEscaperSingleQuoteTest",
+  "source": "mined",
+  "strategy": "new_test",
+  "repo_name": "commons-text",
+  "repo_url": "https://github.com/apache/commons-text.git",
+  "buggy_commit": "1bba8e3b90a155afb4e26ac7a8a1483e33d85a57",
+  "fix_commit": "e2eb7d1afddca1fac6f55a125bdf2cd007bda589",
+  "fix_subject": "Fix StringIndexOutOfBoundsException in CsvUnescaper on lone quote (#748)",
+  "test_class": "CsvTranslatorsTest",
+  "test_method": "testCsvUnEscaperSingleQuoteTest",
+  "log_file": "commons-text-e2eb7d1-testCsvUnEscaperSingleQuoteTest.log",
+  "test_patch_file": "commons-text-e2eb7d1-testCsvUnEscaperSingleQuoteTest.test.patch",
+  "ground_truth_files": [
+    "src/main/java/org/apache/commons/text/translate/CsvTranslators.java"
+  ]
+}

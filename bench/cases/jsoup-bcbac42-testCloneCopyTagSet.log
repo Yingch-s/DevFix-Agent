@@ -1,0 +1,98 @@
+[INFO] Scanning for projects...
+[INFO] Inspecting build with total of 1 modules
+[INFO] Installing Central Publishing features
+[INFO] 
+[INFO] --------------------------< org.jsoup:jsoup >---------------------------
+[INFO] Building jsoup Java HTML Parser 1.22.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ jsoup ---
+[INFO] Copying 1 resource from  to target\classes\META-INF\jsoup
+[INFO] 
+[INFO] --- compiler:3.14.1:compile (compile-java-8) @ jsoup ---
+[INFO] Compiling 43 source files with javac [debug release 8] to target\classes
+[WARNING] Դֵ 8 �ѹ�ʱ������δ�����а���ɾ��
+[WARNING] Ŀ��ֵ 8 �ѹ�ʱ������δ�����а���ɾ��
+[WARNING] Ҫ�����й��ѹ�ʱѡ��ľ���, ��ʹ�� -Xlint:-options��
+[INFO] /D:/Workspace/Agent/DevFix/bench/.work/jsoup/src/main/java/org/jsoup/select/Evaluator.java: ĳЩ�����ļ�ʹ�û򸲸����ѹ�ʱ�� API��
+[INFO] /D:/Workspace/Agent/DevFix/bench/.work/jsoup/src/main/java/org/jsoup/select/Evaluator.java: �й���ϸ��Ϣ, ��ʹ�� -Xlint:deprecation ���±��롣
+[INFO] /D:/Workspace/Agent/DevFix/bench/.work/jsoup/src/main/java/org/jsoup/nodes/Element.java: ĳЩ�����ļ�ʹ����δ�����򲻰�ȫ�Ĳ�����
+[INFO] /D:/Workspace/Agent/DevFix/bench/.work/jsoup/src/main/java/org/jsoup/nodes/Element.java: �й���ϸ��Ϣ, ��ʹ�� -Xlint:unchecked ���±��롣
+[INFO] 
+[INFO] --- compiler:3.14.1:testCompile (compile-java-8) @ jsoup ---
+[INFO] Compiling 53 source files with javac [debug release 8] to target\test-classes
+[WARNING] Դֵ 8 �ѹ�ʱ������δ�����а���ɾ��
+[WARNING] Ŀ��ֵ 8 �ѹ�ʱ������δ�����а���ɾ��
+[WARNING] Ҫ�����й��ѹ�ʱѡ��ľ���, ��ʹ�� -Xlint:-options��
+[WARNING] δ֪��ö�ٳ��� java.lang.annotation.ElementType.MODULE
+[INFO] /D:/Workspace/Agent/DevFix/bench/.work/jsoup/src/test/java/org/jsoup/MultiLocaleExtension.java: ĳЩ�����ļ�ʹ�û򸲸����ѹ�ʱ�� API��
+[INFO] /D:/Workspace/Agent/DevFix/bench/.work/jsoup/src/test/java/org/jsoup/MultiLocaleExtension.java: �й���ϸ��Ϣ, ��ʹ�� -Xlint:deprecation ���±��롣
+[INFO] /D:/Workspace/Agent/DevFix/bench/.work/jsoup/src/test/java/org/jsoup/internal/SoftPoolTest.java: D:\Workspace\Agent\DevFix\bench\.work\jsoup\src\test\java\org\jsoup\internal\SoftPoolTest.javaʹ����δ�����򲻰�ȫ�Ĳ�����
+[INFO] /D:/Workspace/Agent/DevFix/bench/.work/jsoup/src/test/java/org/jsoup/internal/SoftPoolTest.java: �й���ϸ��Ϣ, ��ʹ�� -Xlint:unchecked ���±��롣
+[INFO] 
+[INFO] --- compiler:3.14.1:compile (compile-java-11) @ jsoup ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- animal-sniffer:1.26:check (api-java8) @ jsoup ---
+[INFO] Signature checking is skipped.
+[INFO] 
+[INFO] --- animal-sniffer:1.26:check (api-android21) @ jsoup ---
+[INFO] Signature checking is skipped.
+[INFO] 
+[INFO] --- bundle:5.1.9:manifest (bundle-manifest) @ jsoup ---
+[WARNING] Manifest org.jsoup:jsoup:jar:1.22.1-SNAPSHOT : Classes found in the wrong directory: {META-INF/versions/11/module-info.class=module-info, META-INF/versions/11/org/jsoup/helper/HttpClientExecutor.class=org.jsoup.helper.HttpClientExecutor, META-INF/versions/9/module-info.class=module-info, META-INF/versions/11/org/jsoup/helper/HttpClientExecutor$ProxyWrap.class=org.jsoup.helper.HttpClientExecutor$ProxyWrap, META-INF/versions/11/org/jsoup/helper/HttpClientExecutor$ClientState.class=org.jsoup.helper.HttpClientExecutor$ClientState, META-INF/versions/11/org/jsoup/helper/RequestAuthHandler.class=org.jsoup.helper.RequestAuthHandler, META-INF/versions/9/org/jsoup/helper/RequestAuthHandler.class=org.jsoup.helper.RequestAuthHandler}
+[INFO] Writing manifest: D:\Workspace\Agent\DevFix\bench\.work\jsoup\target\classes\META-INF\MANIFEST.MF
+[INFO] 
+[INFO] --- build-helper:3.6.1:add-test-source (add-java11-test-source) @ jsoup ---
+[INFO] Test Source directory: D:\Workspace\Agent\DevFix\bench\.work\jsoup\src\test\java11 added.
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ jsoup ---
+[INFO] Copying 96 resources from src\test\resources to target\test-classes
+[INFO] 
+[INFO] --- surefire:3.5.4:test (default-test) @ jsoup ---
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.jsoup.parser.ParserTest
+[ERROR] Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.048 s <<< FAILURE! -- in org.jsoup.parser.ParserTest
+[ERROR] org.jsoup.parser.ParserTest.testCloneCopyTagSet -- Time elapsed: 0.032 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: not <null>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:152)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertNotNull.failNull(AssertNotNull.java:49)
+	at org.junit.jupiter.api.AssertNotNull.assertNotNull(AssertNotNull.java:35)
+	at org.junit.jupiter.api.AssertNotNull.assertNotNull(AssertNotNull.java:30)
+	at org.junit.jupiter.api.Assertions.assertNotNull(Assertions.java:304)
+	at org.jsoup.parser.ParserTest.testCloneCopyTagSet(ParserTest.java:93)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+[INFO] 
+[INFO] Results:
+[INFO] 
+[ERROR] Failures: 
+[ERROR]   ParserTest.testCloneCopyTagSet:93 expected: not <null>
+[INFO] 
+[ERROR] Tests run: 1, Failures: 1, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  6.967 s
+[INFO] Finished at: 2026-09-30T22:40:40+08:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:3.5.4:test (default-test) on project jsoup: There are test failures.
+[ERROR] 
+[ERROR] See D:\Workspace\Agent\DevFix\bench\.work\jsoup\target\surefire-reports for the individual test results.
+[ERROR] See dump files (if any exist) [date].dump, [date]-jvmRun[N].dump and [date].dumpstream.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

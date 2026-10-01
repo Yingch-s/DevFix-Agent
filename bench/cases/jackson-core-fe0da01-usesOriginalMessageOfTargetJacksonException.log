@@ -1,0 +1,115 @@
+[INFO] Scanning for projects...
+[INFO] Inspecting build with total of 1 modules
+[INFO] Installing Central Publishing features
+[INFO] 
+[INFO] ------------------< tools.jackson.core:jackson-core >-------------------
+[INFO] Building Jackson-core 3.1.8-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- build-helper:3.6.1:regex-property (regex-property) @ jackson-core ---
+[INFO] 
+[INFO] --- enforcer:3.6.2:enforce (enforce-java) @ jackson-core ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- enforcer:3.6.2:enforce (enforce-properties) @ jackson-core ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- jacoco:0.8.14:prepare-agent (default) @ jackson-core ---
+[INFO] argLine set to -javaagent:C:\\Users\\bula7\\.m2\\repository\\org\\jacoco\\org.jacoco.agent\\0.8.14\\org.jacoco.agent-0.8.14-runtime.jar=destfile=D:\\Workspace\\Agent\\DevFix\\bench\\.work\\jackson-core\\target\\jacoco.exec
+[INFO] 
+[INFO] --- replacer:1.5.3:replace (process-packageVersion) @ jackson-core ---
+[INFO] Replacement run on 1 file.
+[INFO] 
+[INFO] --- build-helper:3.6.1:add-source (add-generated-sources) @ jackson-core ---
+[INFO] Source directory: D:\Workspace\Agent\DevFix\bench\.work\jackson-core\target\generated-sources added.
+[INFO] 
+[INFO] --- build-helper:3.6.1:add-resource (add-resource) @ jackson-core ---
+[INFO] 
+[INFO] --- resources:3.5.0:resources (default-resources) @ jackson-core ---
+[INFO] Copying 6 resources from src\main\resources to target\classes
+[INFO] Copying 1 resource from . to target\classes\META-INF
+[INFO] 
+[INFO] --- compiler:3.15.0:compile (default-compile) @ jackson-core ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 138 source files with javac [debug:lines,source,vars deprecation target 17 module-path] to target\classes
+[INFO] JDK-8318913 workaround: patched module-info.class requires version from [21.0.12.1] to [null] on 1 JDK modules [java.base]
+[WARNING] δ�� -source 17 һ������ϵͳģ��·��
+[INFO] /D:/Workspace/Agent/DevFix/bench/.work/jackson-core/src/main/java/tools/jackson/core/json/JsonFactory.java: D:\Workspace\Agent\DevFix\bench\.work\jackson-core\src\main\java\tools\jackson\core\json\JsonFactory.javaʹ����δ�����򲻰�ȫ�Ĳ�����
+[INFO] /D:/Workspace/Agent/DevFix/bench/.work/jackson-core/src/main/java/tools/jackson/core/json/JsonFactory.java: �й���ϸ��Ϣ, ��ʹ�� -Xlint:unchecked ���±��롣
+[INFO] 
+[INFO] --- bundle:5.1.9:manifest (bundle-manifest) @ jackson-core ---
+[WARNING] Manifest tools.jackson.core:jackson-core:jar:3.1.8-SNAPSHOT : Version for package tools.jackson.core is set to different values in the source (3.1.8-SNAPSHOT) and in the manifest (3.3.0.SNAPSHOT). The version in the manifest is not picked up by an other sibling bundles in this project or projects that directly depend on this project
+[WARNING] Manifest tools.jackson.core:jackson-core:jar:3.1.8-SNAPSHOT : Version for package tools.jackson.core.async is set to different values in the source (3.1.8-SNAPSHOT) and in the manifest (3.3.0.SNAPSHOT). The version in the manifest is not picked up by an other sibling bundles in this project or projects that directly depend on this project
+[WARNING] Manifest tools.jackson.core:jackson-core:jar:3.1.8-SNAPSHOT : Version for package tools.jackson.core.base is set to different values in the source (3.1.8-SNAPSHOT) and in the manifest (3.3.0.SNAPSHOT). The version in the manifest is not picked up by an other sibling bundles in this project or projects that directly depend on this project
+[WARNING] Manifest tools.jackson.core:jackson-core:jar:3.1.8-SNAPSHOT : Version for package tools.jackson.core.exc is set to different values in the source (3.1.8-SNAPSHOT) and in the manifest (3.3.0.SNAPSHOT). The version in the manifest is not picked up by an other sibling bundles in this project or projects that directly depend on this project
+[WARNING] Manifest tools.jackson.core:jackson-core:jar:3.1.8-SNAPSHOT : Version for package tools.jackson.core.filter is set to different values in the source (3.1.8-SNAPSHOT) and in the manifest (3.3.0.SNAPSHOT). The version in the manifest is not picked up by an other sibling bundles in this project or projects that directly depend on this project
+[WARNING] Manifest tools.jackson.core:jackson-core:jar:3.1.8-SNAPSHOT : Version for package tools.jackson.core.io is set to different values in the source (3.1.8-SNAPSHOT) and in the manifest (3.3.0.SNAPSHOT). The version in the manifest is not picked up by an other sibling bundles in this project or projects that directly depend on this project
+[WARNING] Manifest tools.jackson.core:jackson-core:jar:3.1.8-SNAPSHOT : Version for package tools.jackson.core.io.schubfach is set to different values in the source (3.1.8-SNAPSHOT) and in the manifest (3.3.0.SNAPSHOT). The version in the manifest is not picked up by an other sibling bundles in this project or projects that directly depend on this project
+[WARNING] Manifest tools.jackson.core:jackson-core:jar:3.1.8-SNAPSHOT : Version for package tools.jackson.core.json is set to different values in the source (3.1.8-SNAPSHOT) and in the manifest (3.3.0.SNAPSHOT). The version in the manifest is not picked up by an other sibling bundles in this project or projects that directly depend on this project
+[WARNING] Manifest tools.jackson.core:jackson-core:jar:3.1.8-SNAPSHOT : Version for package tools.jackson.core.json.async is set to different values in the source (3.1.8-SNAPSHOT) and in the manifest (3.3.0.SNAPSHOT). The version in the manifest is not picked up by an other sibling bundles in this project or projects that directly depend on this project
+[WARNING] Manifest tools.jackson.core:jackson-core:jar:3.1.8-SNAPSHOT : Version for package tools.jackson.core.sym is set to different values in the source (3.1.8-SNAPSHOT) and in the manifest (3.3.0.SNAPSHOT). The version in the manifest is not picked up by an other sibling bundles in this project or projects that directly depend on this project
+[WARNING] Manifest tools.jackson.core:jackson-core:jar:3.1.8-SNAPSHOT : Version for package tools.jackson.core.tree is set to different values in the source (3.1.8-SNAPSHOT) and in the manifest (3.3.0.SNAPSHOT). The version in the manifest is not picked up by an other sibling bundles in this project or projects that directly depend on this project
+[WARNING] Manifest tools.jackson.core:jackson-core:jar:3.1.8-SNAPSHOT : Version for package tools.jackson.core.type is set to different values in the source (3.1.8-SNAPSHOT) and in the manifest (3.3.0.SNAPSHOT). The version in the manifest is not picked up by an other sibling bundles in this project or projects that directly depend on this project
+[WARNING] Manifest tools.jackson.core:jackson-core:jar:3.1.8-SNAPSHOT : Version for package tools.jackson.core.util is set to different values in the source (3.1.8-SNAPSHOT) and in the manifest (3.3.0.SNAPSHOT). The version in the manifest is not picked up by an other sibling bundles in this project or projects that directly depend on this project
+[INFO] Writing manifest: D:\Workspace\Agent\DevFix\bench\.work\jackson-core\target\classes\META-INF\MANIFEST.MF
+[INFO] 
+[INFO] --- resources:3.5.0:testResources (default-testResources) @ jackson-core ---
+[INFO] Copying 6 resources from src\test\resources to target\test-classes
+[INFO] 
+[INFO] --- compiler:3.15.0:testCompile (default-testCompile) @ jackson-core ---
+[INFO] Recompiling the module because of changed dependency.
+[INFO] Compiling 262 source files with javac [debug:lines,source,vars deprecation target 17 module-path] to target\test-classes
+[INFO] JDK-8318913 workaround: patched module-info.class requires version from [21.0.12.1] to [null] on 1 JDK modules [java.base]
+[WARNING] δ�� -source 17 һ������ϵͳģ��·��
+[WARNING] /D:/Workspace/Agent/DevFix/bench/.work/jackson-core/src/test/java/tools/jackson/core/unittest/io/UTF32ReaderSurrogate1713Test.java:[88,38] tools.jackson.core.TokenStreamFactory�е�createParser(byte[])�ѹ�ʱ
+[WARNING] /D:/Workspace/Agent/DevFix/bench/.work/jackson-core/src/test/java/tools/jackson/core/unittest/io/UTF32ReaderSurrogate1713Test.java:[91,42] tools.jackson.core.JsonParser�е�getText()�ѹ�ʱ
+[WARNING] /D:/Workspace/Agent/DevFix/bench/.work/jackson-core/src/test/java/tools/jackson/core/unittest/read/NextNameWithMatcherTest.java:[28,13] java.util.Locale�е�Locale(java.lang.String,java.lang.String)�ѹ�ʱ
+[WARNING] /D:/Workspace/Agent/DevFix/bench/.work/jackson-core/src/test/java/tools/jackson/core/unittest/sym/PropertyNameMatchersTest.java:[95,31] java.util.Locale�е�Locale(java.lang.String,java.lang.String)�ѹ�ʱ
+[INFO] 
+[INFO] --- surefire:3.5.5:test (default-test) @ jackson-core ---
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running tools.jackson.core.unittest.WrapWithPath1724Test
+[ERROR] Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.130 s <<< FAILURE! -- in tools.jackson.core.unittest.WrapWithPath1724Test
+[ERROR] tools.jackson.core.unittest.WrapWithPath1724Test.usesOriginalMessageOfTargetJacksonException -- Time elapsed: 0.093 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: 
+expected: <Bad value> but was: <Bad value
+ at [Source: UNKNOWN; byte offset: #UNKNOWN] (through reference chain: tools.jackson.core.unittest.WrapWithPath1724Test["inner"])>
+	at org.junit.jupiter.api@6.0.3/org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:158)
+	at org.junit.jupiter.api@6.0.3/org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:139)
+	at org.junit.jupiter.api@6.0.3/org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:201)
+	at org.junit.jupiter.api@6.0.3/org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:184)
+	at org.junit.jupiter.api@6.0.3/org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:179)
+	at org.junit.jupiter.api@6.0.3/org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1188)
+	at tools.jackson.core.unittest/tools.jackson.core.unittest.WrapWithPath1724Test.usesOriginalMessageOfTargetJacksonException(WrapWithPath1724Test.java:25)
+
+[INFO] 
+[INFO] Results:
+[INFO] 
+[ERROR] Failures: 
+[ERROR]   WrapWithPath1724Test.usesOriginalMessageOfTargetJacksonException:25 expected: <Bad value> but was: <Bad value
+ at [Source: UNKNOWN; byte offset: #UNKNOWN] (through reference chain: tools.jackson.core.unittest.WrapWithPath1724Test["inner"])>
+[INFO] 
+[ERROR] Tests run: 1, Failures: 1, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  10.422 s
+[INFO] Finished at: 2026-09-30T22:52:19+08:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:3.5.5:test (default-test) on project jackson-core: There are test failures.
+[ERROR] 
+[ERROR] See D:\Workspace\Agent\DevFix\bench\.work\jackson-core\target\surefire-reports for the individual test results.
+[ERROR] See dump files (if any exist) [date].dump, [date]-jvmRun[N].dump and [date].dumpstream.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

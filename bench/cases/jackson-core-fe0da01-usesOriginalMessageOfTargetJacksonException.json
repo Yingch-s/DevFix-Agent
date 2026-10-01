@@ -1,0 +1,17 @@
+{
+  "case_id": "jackson-core-fe0da01-usesOriginalMessageOfTargetJacksonException",
+  "source": "mined",
+  "strategy": "new_test",
+  "repo_name": "jackson-core",
+  "repo_url": "https://github.com/FasterXML/jackson-core.git",
+  "buggy_commit": "0a382d9af429a23c711aebac7e3b3375a8641cdb",
+  "fix_commit": "fe0da01e3ec9e68cf6c75feb890e865d206c91c4",
+  "fix_subject": "Fix target exception messages in wrapWithPath (#1724) (#1726)",
+  "test_class": "WrapWithPath1724Test",
+  "test_method": "usesOriginalMessageOfTargetJacksonException",
+  "log_file": "jackson-core-fe0da01-usesOriginalMessageOfTargetJacksonException.log",
+  "test_patch_file": "jackson-core-fe0da01-usesOriginalMessageOfTargetJacksonException.test.patch",
+  "ground_truth_files": [
+    "src/main/java/tools/jackson/core/JacksonException.java"
+  ]
+}

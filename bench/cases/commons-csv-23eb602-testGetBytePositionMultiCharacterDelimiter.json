@@ -1,0 +1,17 @@
+{
+  "case_id": "commons-csv-23eb602-testGetBytePositionMultiCharacterDelimiter",
+  "source": "mined",
+  "strategy": "new_test",
+  "repo_name": "commons-csv",
+  "repo_url": "https://github.com/apache/commons-csv.git",
+  "buggy_commit": "add38c3e06d1b90ebcb87ad4390a000b09850df1",
+  "fix_commit": "23eb602d25a9cf0c989085e9a618dd2b3bff5b45",
+  "fix_subject": "[CSV-323] ExtendedBufferedReader byte tracking leads to an incorrect CSVRecord.getBytePosition()",
+  "test_class": "CSVParserTest",
+  "test_method": "testGetBytePositionMultiCharacterDelimiter",
+  "log_file": "commons-csv-23eb602-testGetBytePositionMultiCharacterDelimiter.log",
+  "test_patch_file": "commons-csv-23eb602-testGetBytePositionMultiCharacterDelimiter.test.patch",
+  "ground_truth_files": [
+    "src/main/java/org/apache/commons/csv/ExtendedBufferedReader.java"
+  ]
+}

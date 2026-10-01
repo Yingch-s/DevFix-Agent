@@ -1,0 +1,17 @@
+{
+  "case_id": "commons-text-f65ff30-testContainsAllWordsWithNewline",
+  "source": "mined",
+  "strategy": "new_test",
+  "repo_name": "commons-text",
+  "repo_url": "https://github.com/apache/commons-text.git",
+  "buggy_commit": "0c21b84c0bae469bbeb4ae0b8adebf7504df9458",
+  "fix_commit": "f65ff30d4fdf373a083e3c3f931f479ca6eb3ef6",
+  "fix_subject": "Fix WordUtils.containsAllWords missing words across line breaks (#754)",
+  "test_class": "WordUtilsTest",
+  "test_method": "testContainsAllWordsWithNewline",
+  "log_file": "commons-text-f65ff30-testContainsAllWordsWithNewline.log",
+  "test_patch_file": "commons-text-f65ff30-testContainsAllWordsWithNewline.test.patch",
+  "ground_truth_files": [
+    "src/main/java/org/apache/commons/text/WordUtils.java"
+  ]
+}

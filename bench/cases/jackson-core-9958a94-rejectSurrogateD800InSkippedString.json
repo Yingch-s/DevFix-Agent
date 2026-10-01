@@ -1,0 +1,18 @@
+{
+  "case_id": "jackson-core-9958a94-rejectSurrogateD800InSkippedString",
+  "source": "mined",
+  "strategy": "new_test",
+  "repo_name": "jackson-core",
+  "repo_url": "https://github.com/FasterXML/jackson-core.git",
+  "buggy_commit": "02d8bd9da2b4fac9e44c57fcd0c8124cf71d817a",
+  "fix_commit": "9958a94ef1d96c9620ab1134d57552df12f195b4",
+  "fix_subject": "Fix UTF-8 surrogate validation in String skip path (#1727)",
+  "test_class": "UTF8SurrogateValidation363Test",
+  "test_method": "rejectSurrogateD800InSkippedString",
+  "log_file": "jackson-core-9958a94-rejectSurrogateD800InSkippedString.log",
+  "test_patch_file": "jackson-core-9958a94-rejectSurrogateD800InSkippedString.test.patch",
+  "ground_truth_files": [
+    "src/main/java/tools/jackson/core/json/UTF8DataInputJsonParser.java",
+    "src/main/java/tools/jackson/core/json/UTF8StreamJsonParser.java"
+  ]
+}

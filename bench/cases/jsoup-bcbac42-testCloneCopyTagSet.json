@@ -1,0 +1,18 @@
+{
+  "case_id": "jsoup-bcbac42-testCloneCopyTagSet",
+  "source": "mined",
+  "strategy": "new_test",
+  "repo_name": "jsoup",
+  "repo_url": "https://github.com/jhy/jsoup.git",
+  "buggy_commit": "cc90f726cd721ad2c19cbd27997482a5f9b8a7ae",
+  "fix_commit": "bcbac427ff4bca1748f8eb5125a23d4c739b75e9",
+  "fix_subject": "Fix #2422 - Cloned Parser does not reuse TagSet from original (#2423)",
+  "test_class": "ParserTest",
+  "test_method": "testCloneCopyTagSet",
+  "log_file": "jsoup-bcbac42-testCloneCopyTagSet.log",
+  "test_patch_file": "jsoup-bcbac42-testCloneCopyTagSet.test.patch",
+  "ground_truth_files": [
+    "src/main/java/org/jsoup/parser/Parser.java",
+    "src/main/java/org/jsoup/parser/TagSet.java"
+  ]
+}

@@ -1,0 +1,106 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -------------------< org.apache.commons:commons-csv >-------------------
+[INFO] Building Apache Commons CSV 1.15.0-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- enforcer:3.6.2:enforce (enforce-maven-version) @ commons-csv ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- enforcer:3.6.2:enforce (enforce-java-version) @ commons-csv ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- apache-rat:0.18:check (rat-check) @ commons-csv ---
+[INFO] No issues found.
+[INFO] 
+[INFO] --- artifact:3.6.1:check-buildplan (check-buildplan) @ commons-csv ---
+[INFO] No known issue in 20 plugins
+[INFO] 
+[INFO] --- build-helper:3.6.1:parse-version (parse-version) @ commons-csv ---
+[INFO] 
+[INFO] --- antrun:3.2.0:run (javadoc.resources) @ commons-csv ---
+[INFO] Executing tasks
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- remote-resources:3.3.0:process (process-resource-bundles) @ commons-csv ---
+[INFO] Skipping remote resources execution.
+[INFO] 
+[INFO] --- resources:3.5.0:resources (default-resources) @ commons-csv ---
+[INFO] skip non existing resourceDirectory D:\Workspace\Agent\DevFix\bench\.work\commons-csv\src\main\resources
+[INFO] Copying 2 resources from . to target\classes\META-INF
+[INFO] 
+[INFO] --- compiler:3.15.0:compile (default-compile) @ commons-csv ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 12 source files with javac [debug release 8] to target\classes
+[WARNING] Դֵ 8 �ѹ�ʱ������δ�����а���ɾ��
+[WARNING] Ŀ��ֵ 8 �ѹ�ʱ������δ�����а���ɾ��
+[WARNING] Ҫ�����й��ѹ�ʱѡ��ľ���, ��ʹ�� -Xlint:-options��
+[INFO] 
+[INFO] --- bundle:6.0.2:manifest (bundle-manifest) @ commons-csv ---
+[INFO] Writing manifest: D:\Workspace\Agent\DevFix\bench\.work\commons-csv\target\osgi\MANIFEST.MF
+[INFO] 
+[INFO] --- resources:3.5.0:testResources (default-testResources) @ commons-csv ---
+[INFO] Copying 25 resources from src\test\resources to target\test-classes
+[INFO] Copying 2 resources from . to target\test-classes\META-INF
+[INFO] 
+[INFO] --- compiler:3.15.0:testCompile (default-testCompile) @ commons-csv ---
+[INFO] Recompiling the module because of changed dependency.
+[INFO] Compiling 42 source files with javac [debug release 8] to target\test-classes
+[WARNING] Դֵ 8 �ѹ�ʱ������δ�����а���ɾ��
+[WARNING] Ŀ��ֵ 8 �ѹ�ʱ������δ�����а���ɾ��
+[WARNING] Ҫ�����й��ѹ�ʱѡ��ľ���, ��ʹ�� -Xlint:-options��
+[INFO] /D:/Workspace/Agent/DevFix/bench/.work/commons-csv/src/test/java/org/apache/commons/csv/CSVFileParserTest.java: ĳЩ�����ļ�ʹ�û򸲸����ѹ�ʱ�� API��
+[INFO] /D:/Workspace/Agent/DevFix/bench/.work/commons-csv/src/test/java/org/apache/commons/csv/CSVFileParserTest.java: �й���ϸ��Ϣ, ��ʹ�� -Xlint:deprecation ���±��롣
+[INFO] 
+[INFO] --- jacoco:0.8.15:prepare-agent (prepare-agent) @ commons-csv ---
+[INFO] argLine set to -javaagent:C:\\Users\\bula7\\.m2\\repository\\org\\jacoco\\org.jacoco.agent\\0.8.15\\org.jacoco.agent-0.8.15-runtime.jar=destfile=D:\\Workspace\\Agent\\DevFix\\bench\\.work\\commons-csv\\target\\jacoco.exec,exclclassloader=jdk.internal.loader.ClassLoaders$PlatformClassLoader -XX:+EnableDynamicAgentLoading
+[INFO] 
+[INFO] --- surefire:3.5.6:test (default-test) @ commons-csv ---
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.apache.commons.csv.CSVParserTest
+[ERROR] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.140 s <<< FAILURE! -- in org.apache.commons.csv.CSVParserTest
+[ERROR] org.apache.commons.csv.CSVParserTest.testGetBytePositionMultiCharacterDelimiterWithSupplementaryCharacter -- Time elapsed: 0.094 s <<< ERROR!
+java.nio.charset.CharacterCodingException
+	at org.apache.commons.csv.ExtendedBufferedReader.getEncodedCharLength(ExtendedBufferedReader.java:156)
+	at org.apache.commons.csv.ExtendedBufferedReader.getEncodedCharLength(ExtendedBufferedReader.java:113)
+	at org.apache.commons.csv.ExtendedBufferedReader.read(ExtendedBufferedReader.java:237)
+	at org.apache.commons.io.input.UnsynchronizedBufferedReader.peek(UnsynchronizedBufferedReader.java:236)
+	at org.apache.commons.csv.Lexer.isDelimiter(Lexer.java:157)
+	at org.apache.commons.csv.Lexer.parseSimpleToken(Lexer.java:425)
+	at org.apache.commons.csv.Lexer.nextToken(Lexer.java:306)
+	at org.apache.commons.csv.CSVParser.nextRecord(CSVParser.java:905)
+	at org.apache.commons.csv.CSVParserTest.testGetBytePositionMultiCharacterDelimiterWithSupplementaryCharacter(CSVParserTest.java:683)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+[INFO] 
+[INFO] Results:
+[INFO] 
+[ERROR] Errors: 
+[ERROR]   CSVParserTest.testGetBytePositionMultiCharacterDelimiterWithSupplementaryCharacter:683 ? CharacterCoding
+[INFO] 
+[ERROR] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  8.699 s
+[INFO] Finished at: 2026-09-30T22:50:08+08:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:3.5.6:test (default-test) on project commons-csv: 
+[ERROR] 
+[ERROR] See D:\Workspace\Agent\DevFix\bench\.work\commons-csv\target\surefire-reports for the individual test results.
+[ERROR] See dump files (if any exist) [date].dump, [date]-jvmRun[N].dump and [date].dumpstream.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

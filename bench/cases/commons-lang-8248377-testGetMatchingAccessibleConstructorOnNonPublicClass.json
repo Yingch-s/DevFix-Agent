@@ -1,0 +1,17 @@
+{
+  "case_id": "commons-lang-8248377-testGetMatchingAccessibleConstructorOnNonPublicClass",
+  "source": "mined",
+  "strategy": "new_test",
+  "repo_name": "commons-lang",
+  "repo_url": "https://github.com/apache/commons-lang.git",
+  "buggy_commit": "a1a3bd056e556e7cce7c34bae905ed7d047c79eb",
+  "fix_commit": "82483775157159a8edcc9220498f034fa1621611",
+  "fix_subject": "Fix ConstructorUtils.getMatchingAccessibleConstructor on non-public classes (#1793)",
+  "test_class": "ConstructorUtilsTest",
+  "test_method": "testGetMatchingAccessibleConstructorOnNonPublicClass",
+  "log_file": "commons-lang-8248377-testGetMatchingAccessibleConstructorOnNonPublicClass.log",
+  "test_patch_file": "commons-lang-8248377-testGetMatchingAccessibleConstructorOnNonPublicClass.test.patch",
+  "ground_truth_files": [
+    "src/main/java/org/apache/commons/lang3/reflect/ConstructorUtils.java"
+  ]
+}

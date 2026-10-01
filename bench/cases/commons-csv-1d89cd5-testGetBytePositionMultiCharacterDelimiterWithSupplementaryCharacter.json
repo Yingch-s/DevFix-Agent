@@ -1,0 +1,17 @@
+{
+  "case_id": "commons-csv-1d89cd5-testGetBytePositionMultiCharacterDelimiterWithSupplementaryCharacter",
+  "source": "mined",
+  "strategy": "new_test",
+  "repo_name": "commons-csv",
+  "repo_url": "https://github.com/apache/commons-csv.git",
+  "buggy_commit": "ed8dbf25ad73856cfa10cba4f5e9855fdcae0d88",
+  "fix_commit": "1d89cd5f0aa454ef3853dfc7528242399ef26b74",
+  "fix_subject": "[CSV-329] Fix byte tracking for supplementary delimiters",
+  "test_class": "CSVParserTest",
+  "test_method": "testGetBytePositionMultiCharacterDelimiterWithSupplementaryCharacter",
+  "log_file": "commons-csv-1d89cd5-testGetBytePositionMultiCharacterDelimiterWithSupplementaryCharacter.log",
+  "test_patch_file": "commons-csv-1d89cd5-testGetBytePositionMultiCharacterDelimiterWithSupplementaryCharacter.test.patch",
+  "ground_truth_files": [
+    "src/main/java/org/apache/commons/csv/ExtendedBufferedReader.java"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "case_id": "jsoup-34fb153-testTagStartsWithToString",
+  "source": "mined",
+  "strategy": "new_test",
+  "repo_name": "jsoup",
+  "repo_url": "https://github.com/jhy/jsoup.git",
+  "buggy_commit": "d5bbe252f1472f95372612fa9f9fe1616f0b5dbc",
+  "fix_commit": "34fb15336ecb6504338c5a17052c158d17241958",
+  "fix_subject": "Added Evaluator toString tests, fixed formatting",
+  "test_class": "EvaluatorTest",
+  "test_method": "testTagStartsWithToString",
+  "log_file": "jsoup-34fb153-testTagStartsWithToString.log",
+  "test_patch_file": "jsoup-34fb153-testTagStartsWithToString.test.patch",
+  "ground_truth_files": [
+    "src/main/java/org/jsoup/select/Evaluator.java"
+  ]
+}

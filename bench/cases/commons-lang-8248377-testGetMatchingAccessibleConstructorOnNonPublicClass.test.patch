@@ -1,0 +1,63 @@
+diff --git a/src/test/java/org/apache/commons/lang3/reflect/ConstructorUtilsTest.java b/src/test/java/org/apache/commons/lang3/reflect/ConstructorUtilsTest.java
+index 9bb73ae98..5bbe2c627 100644
+--- a/src/test/java/org/apache/commons/lang3/reflect/ConstructorUtilsTest.java
++++ b/src/test/java/org/apache/commons/lang3/reflect/ConstructorUtilsTest.java
+@@ -46,6 +46,8 @@ private static class BaseClass {
+     }
+ 
+     static class PrivateClass {
++        private final String value;
++
+         @SuppressWarnings("unused")
+         public static class PublicInnerClass {
+             public PublicInnerClass() {
+@@ -54,6 +56,19 @@ public PublicInnerClass() {
+ 
+         @SuppressWarnings("unused")
+         public PrivateClass() {
++            this("default");
++        }
++
++        public PrivateClass(final String value) {
++            this.value = value;
++        }
++
++        public PrivateClass(final Number number) {
++            this.value = String.valueOf(number);
++        }
++
++        public String getValue() {
++            return value;
+         }
+     }
+ 
+@@ -242,6 +257,29 @@ void testVarArgsUnboxing() throws Exception {
+         assertArrayEquals(new String[] { "2", "3" }, testBean.varArgs);
+     }
+ 
++    @Test
++    void testGetMatchingAccessibleConstructorOnNonPublicClass() {
++        assertNull(ConstructorUtils.getMatchingAccessibleConstructor(PrivateClass.class));
++        assertNull(ConstructorUtils.getMatchingAccessibleConstructor(PrivateClass.class, String.class));
++        assertNull(ConstructorUtils.getMatchingAccessibleConstructor(PrivateClass.class, Integer.class));
++        assertNull(ConstructorUtils.getMatchingAccessibleConstructor(PrivateClass.PublicInnerClass.class));
++    }
++
++    @Test
++    void testInvokeConstructorOnNonPublicClass() {
++        assertThrows(NoSuchMethodException.class, () -> ConstructorUtils.invokeConstructor(PrivateClass.class));
++        assertThrows(NoSuchMethodException.class, () -> ConstructorUtils.invokeConstructor(PrivateClass.class, "test"));
++        assertThrows(NoSuchMethodException.class, () -> ConstructorUtils.invokeConstructor(PrivateClass.class, Integer.valueOf(1)));
++        assertThrows(NoSuchMethodException.class, () -> ConstructorUtils.invokeConstructor(PrivateClass.PublicInnerClass.class));
++    }
++
++    @Test
++    void testInvokeExactConstructorOnNonPublicClass() {
++        assertThrows(NoSuchMethodException.class, () -> ConstructorUtils.invokeExactConstructor(PrivateClass.class));
++        assertThrows(NoSuchMethodException.class, () -> ConstructorUtils.invokeExactConstructor(PrivateClass.class, "test"));
++        assertThrows(NoSuchMethodException.class, () -> ConstructorUtils.invokeExactConstructor(PrivateClass.PublicInnerClass.class));
++    }
++
+     private String toString(final Class<?>[] c) {
+         return Arrays.asList(c).toString();
+     }

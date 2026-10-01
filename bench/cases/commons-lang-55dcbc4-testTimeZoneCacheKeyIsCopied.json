@@ -1,0 +1,17 @@
+{
+  "case_id": "commons-lang-55dcbc4-testTimeZoneCacheKeyIsCopied",
+  "source": "mined",
+  "strategy": "new_test",
+  "repo_name": "commons-lang",
+  "repo_url": "https://github.com/apache/commons-lang.git",
+  "buggy_commit": "d86ec875bdc7676d76c162d393e81db7dee01f2d",
+  "fix_commit": "55dcbc4bb1449aa9f7c6ee422cc22b465a35fa2f",
+  "fix_subject": "Fix mutable time zone keys in the FastDateFormat cache",
+  "test_class": "FastDateFormatTest",
+  "test_method": "testTimeZoneCacheKeyIsCopied",
+  "log_file": "commons-lang-55dcbc4-testTimeZoneCacheKeyIsCopied.log",
+  "test_patch_file": "commons-lang-55dcbc4-testTimeZoneCacheKeyIsCopied.test.patch",
+  "ground_truth_files": [
+    "src/main/java/org/apache/commons/lang3/time/AbstractFormatCache.java"
+  ]
+}

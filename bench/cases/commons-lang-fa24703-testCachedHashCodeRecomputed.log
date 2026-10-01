@@ -1,0 +1,122 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ------------------< org.apache.commons:commons-lang3 >------------------
+[INFO] Building Apache Commons Lang 3.21.0-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- enforcer:3.6.3:enforce (enforce-maven-version) @ commons-lang3 ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- enforcer:3.6.3:enforce (enforce-java-version) @ commons-lang3 ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- apache-rat:0.18:check (rat-check) @ commons-lang3 ---
+[INFO] No issues found.
+[INFO] 
+[INFO] --- artifact:3.6.1:check-buildplan (check-buildplan) @ commons-lang3 ---
+[INFO] No known issue in 21 plugins
+[INFO] 
+[INFO] --- build-helper:3.6.1:parse-version (parse-version) @ commons-lang3 ---
+[INFO] 
+[INFO] --- antrun:3.2.0:run (javadoc.resources) @ commons-lang3 ---
+[INFO] Executing tasks
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- remote-resources:3.3.0:process (process-resource-bundles) @ commons-lang3 ---
+[INFO] Skipping remote resources execution.
+[INFO] 
+[INFO] --- resources:3.5.0:resources (default-resources) @ commons-lang3 ---
+[INFO] skip non existing resourceDirectory D:\Workspace\Agent\DevFix\bench\.work\commons-lang\src\main\resources
+[INFO] Copying 2 resources from . to target\classes\META-INF
+[INFO] 
+[INFO] --- compiler:3.16.0:compile (default-compile) @ commons-lang3 ---
+[INFO] Recompiling the module because of changed dependency.
+[INFO] Compiling 264 source files with javac [debug release 8] to target\classes
+[WARNING] Դֵ 8 �ѹ�ʱ������δ�����а���ɾ��
+[WARNING] Ŀ��ֵ 8 �ѹ�ʱ������δ�����а���ɾ��
+[WARNING] Ҫ�����й��ѹ�ʱѡ��ľ���, ��ʹ�� -Xlint:-options��
+[INFO] /D:/Workspace/Agent/DevFix/bench/.work/commons-lang/src/main/java/org/apache/commons/lang3/builder/ToStringStyle.java: ĳЩ�����ļ�ʹ�û򸲸����ѹ�ʱ�� API��
+[INFO] /D:/Workspace/Agent/DevFix/bench/.work/commons-lang/src/main/java/org/apache/commons/lang3/builder/ToStringStyle.java: �й���ϸ��Ϣ, ��ʹ�� -Xlint:deprecation ���±��롣
+[INFO] /D:/Workspace/Agent/DevFix/bench/.work/commons-lang/src/main/java/org/apache/commons/lang3/AppendableJoiner.java: ĳЩ�����ļ�ʹ����δ�����򲻰�ȫ�Ĳ�����
+[INFO] /D:/Workspace/Agent/DevFix/bench/.work/commons-lang/src/main/java/org/apache/commons/lang3/AppendableJoiner.java: �й���ϸ��Ϣ, ��ʹ�� -Xlint:unchecked ���±��롣
+[INFO] 
+[INFO] --- bundle:6.1.2:manifest (bundle-manifest) @ commons-lang3 ---
+[INFO] Writing manifest: D:\Workspace\Agent\DevFix\bench\.work\commons-lang\target\osgi\MANIFEST.MF
+[INFO] 
+[INFO] --- resources:3.5.0:testResources (default-testResources) @ commons-lang3 ---
+[INFO] Copying 7 resources from src\test\resources to target\test-classes
+[INFO] Copying 2 resources from . to target\test-classes\META-INF
+[INFO] 
+[INFO] --- compiler:3.16.0:testCompile (default-testCompile) @ commons-lang3 ---
+[INFO] Recompiling the module because of changed dependency.
+[INFO] Compiling 363 source files with javac [debug release 8] to target\test-classes
+[WARNING] Դֵ 8 �ѹ�ʱ������δ�����а���ɾ��
+[WARNING] Ŀ��ֵ 8 �ѹ�ʱ������δ�����а���ɾ��
+[WARNING] Ҫ�����й��ѹ�ʱѡ��ľ���, ��ʹ�� -Xlint:-options��
+[WARNING] /D:/Workspace/Agent/DevFix/bench/.work/commons-lang/src/test/java/org/apache/commons/lang3/CharSetTest.java:[394,55] ���һ������ʹ���˲�׼ȷ�ı������͵� varargs �����ķ� varargs ����; 
+  ���� varargs ����, Ӧʹ�� java.lang.String
+  ���ڷ� varargs ����, Ӧʹ�� java.lang.String[], ����Ҳ�������ƴ˾���
+[INFO] /D:/Workspace/Agent/DevFix/bench/.work/commons-lang/src/test/java/org/apache/commons/lang3/AppendableJoinerTest.java: ĳЩ�����ļ�ʹ�û򸲸����ѹ�ʱ�� API��
+[INFO] /D:/Workspace/Agent/DevFix/bench/.work/commons-lang/src/test/java/org/apache/commons/lang3/AppendableJoinerTest.java: �й���ϸ��Ϣ, ��ʹ�� -Xlint:deprecation ���±��롣
+[INFO] /D:/Workspace/Agent/DevFix/bench/.work/commons-lang/src/test/java/org/apache/commons/lang3/EnumUtilsTest.java: ĳЩ�����ļ�ʹ����δ�����򲻰�ȫ�Ĳ�����
+[INFO] /D:/Workspace/Agent/DevFix/bench/.work/commons-lang/src/test/java/org/apache/commons/lang3/EnumUtilsTest.java: �й���ϸ��Ϣ, ��ʹ�� -Xlint:unchecked ���±��롣
+[INFO] 
+[INFO] --- jacoco:0.8.15:prepare-agent (prepare-agent) @ commons-lang3 ---
+[INFO] argLine set to -javaagent:C:\\Users\\bula7\\.m2\\repository\\org\\jacoco\\org.jacoco.agent\\0.8.15\\org.jacoco.agent-0.8.15-runtime.jar=destfile=D:\\Workspace\\Agent\\DevFix\\bench\\.work\\commons-lang\\target\\jacoco.exec,exclclassloader=jdk.internal.loader.ClassLoaders$PlatformClassLoader -Xmx1G --add-opens java.base/java.lang.reflect=ALL-UNNAMED --add-opens java.base/java.lang=ALL-UNNAMED --add-opens java.base/java.util=ALL-UNNAMED --add-opens java.base/java.time=ALL-UNNAMED --add-opens java.base/java.time.chrono=ALL-UNNAMED --add-opens java.base/java.util.concurrent.atomic=ALL-UNNAMED -XX:+EnableDynamicAgentLoading
+[INFO] 
+[INFO] --- surefire:3.6.0:test (default-test) @ commons-lang3 ---
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.apache.commons.lang3.RangeReadObjectTest
+[ERROR] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.117 s <<< FAILURE! -- in org.apache.commons.lang3.RangeReadObjectTest
+[ERROR] org.apache.commons.lang3.RangeReadObjectTest.testCachedHashCodeRecomputed -- Time elapsed: 0.087 s <<< ERROR!
+org.apache.commons.lang3.SerializationException: java.io.InvalidObjectException: Range hashCode does not match minimum/maximum.
+	at org.apache.commons.lang3.SerializationUtils.deserialize(SerializationUtils.java:206)
+	at org.apache.commons.lang3.SerializationUtils.deserialize(SerializationUtils.java:164)
+	at org.apache.commons.lang3.SerializationUtils.roundtrip(SerializationUtils.java:241)
+	at org.apache.commons.lang3.RangeReadObjectTest.testCachedHashCodeRecomputed(RangeReadObjectTest.java:133)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+Caused by: java.io.InvalidObjectException: Range hashCode does not match minimum/maximum.
+	at org.apache.commons.lang3.Range.readObject(Range.java:629)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.io.ObjectStreamClass.invokeReadObject(ObjectStreamClass.java:1102)
+	at java.base/java.io.ObjectInputStream.readSerialData(ObjectInputStream.java:2444)
+	at java.base/java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:2284)
+	at java.base/java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1762)
+	at java.base/java.io.ObjectInputStream.readObject(ObjectInputStream.java:540)
+	at java.base/java.io.ObjectInputStream.readObject(ObjectInputStream.java:498)
+	at org.apache.commons.lang3.SerializationUtils.deserialize(SerializationUtils.java:203)
+	... 6 more
+
+[INFO] 
+[INFO] Results:
+[INFO] 
+[ERROR] Errors: 
+[ERROR]   RangeReadObjectTest.testCachedHashCodeRecomputed:133 ? Serialization java.io.InvalidObjectException: Range hashCode does not match minimum/maximum.
+[INFO] 
+[ERROR] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  23.449 s
+[INFO] Finished at: 2026-09-30T22:45:22+08:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:3.6.0:test (default-test) on project commons-lang3: 
+[ERROR] 
+[ERROR] See D:\Workspace\Agent\DevFix\bench\.work\commons-lang\target\surefire-reports for the individual test results.
+[ERROR] See dump files (if any exist) [date].dump, [date]-jvmRun[N].dump and [date].dumpstream.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

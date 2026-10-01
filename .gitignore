@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+build/
+dist/
+
+# 工具缓存
+.pytest_cache/
+.ruff_cache/
+
+# 用户私有配置（含模型选择等个人信息）
+devfix.yaml
+
+# DevFix 运行产物
+runs/
+demo-projects/
+
+# Benchmark：克隆的仓库与评测输出不入库（case 定义入库）
+bench/.work/
+bench/runs/
+bench/results/
+
+# IDE
+.idea/
+.vscode/
